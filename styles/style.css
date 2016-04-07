@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "BebasNeueRegular";
+    src: url('../font/BebasNeueRegular.otf');
+}
+
+body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #FCDC12;
+}
+
+.section{
+	width: 100vw;
+	height: 100vh;
+}
+
+.gif{
+	width: 500px;
+	height: 300px;
+}
+
+.formulaire{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position:relative;
+	width: 500px;
+	height: 500px;
+	margin-right: auto;
+	margin-left: auto;
+
+
+}
+
+
+.formulaire .button{
+
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 40px;
+	overflow: hidden;
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	transform-origin: 50% 50%;
+	-webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+
+}
+.formulaire .button:hover{
+	border: solid 1px black;
+	-webkit-transform: scale(1.1);;
+	-ms-transform: scale(1.1);;
+	-o-transform: scale(1.1);;
+	transform: scale(1.1);;
+}
+
+.formulaire .button.filled{
+	-webkit-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	transition-duration: 1s;
+
+}
+.formulaire .button.filled .info{
+	display: none;
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	transition-delay: 1s;
+}
+
+.formulaire .button form ul{
+	position: relative;
+	top: 25px;
+	list-style: none;
+}
+.formulaire .button form ul li input{
+	border: none;
+    border-bottom: solid 1px;
+    width: 90%;
+    font-size: 17px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.formulaire .button form ul li textarea{
+	border: none;
+    border-bottom: solid 1px;
+    width: 90%;
+    font-size: 17px;
+    margin-bottom: 40px;
+    height: 100px;
+    font-family: "BebasNeueRegular";
+    outline: none;
+}
+.formulaire .button form ul li .mood{
+	 background-position: 92% 50%;
+    height: 40px;
+    vertical-align: middle;
+    width: 90%;
+    background-color: #FFF;
+    outline: none;
+}
+.info .message{
+	height: 200px;
+}
+
+#payment-form{
+	display: none;
+}
+.button.filled #payment-form{
+	display: block;
+	-webkit-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+input[type='text']{
+	font-family: "BebasNeueRegular";
+}
+
+.more_info{
+	position: absolute;
+	bottom: 10px;
+	font-family: "BebasNeueRegular";
+	font-size: 40px;
+	left: calc(50% - 7px);
+	
+}
+.more_info a{
+	text-decoration: none;
+	color: #FFF;
+}
